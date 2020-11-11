@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .action-button {
+        height: 30px;
+        width: 150px;
+        outline: none;
+        background-color: #0052CC;
+        display: inline-flex;
+        align-items: center;
+        margin-top: 5px;
+        margin-bottom: 5px
+      }
+      #no-of-tabs {
+        padding-bottom: 5px;
+      }
+      #buttons {
+        display: inline-flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      button > p {
+        color: white
+      }
+      .input-field {
+        display: inline-flex;
+        flex-direction: column;
+        padding-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="width: 300px;">
+    <div id="no-of-tabs"></div>
+    <div id="buttons"></div>
+    <div id="mydiv" style="display: none;"><p>No such tab found</p></div>
+    <form autocomplete="off" id="myform">
+      <div class="input-field">
+        <label for="name">Name</label>
+        <input type="text" id="name"/> 
+      </div>
+      <div class="input-field">
+        <label for="addresss">Domain (enter www if needed, e.g. www.facebook.com)</label>
+        <input type="text" id="address" />
+      </div>
+      <input type="submit">
+    </form>
+  </div>
+    <script type="module" src="popup.js"></script>
+    <script type="module" src="helpers.js"></script>
+  </body>
+</html>

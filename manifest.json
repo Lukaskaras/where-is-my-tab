@@ -1,0 +1,19 @@
+{
+  "name": "Where's my tab",
+  "short_name": "Where's my tab",
+  "description": "Always finds your tab",
+  "version": "1.0.0",
+  "permissions": ["tabs", "storage", "http://*/*", "https://*/*"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/question-16.png",
+      "128": "images/question-128.png"
+    }
+  },
+  "manifest_version": 2,
+  "icons": {
+      "16": "images/question-16.png",
+      "128": "images/question-128.png"
+  }
+}
